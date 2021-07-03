@@ -1,0 +1,35 @@
+{
+  "name": "bino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browsersList": [
+    "Last 2 version",
+    "not dead",
+    "not ie <= 11",
+    "IOS >= 12"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriytikhiyprog/bino.git"
+  },
+  "author": "DmitryTi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriytikhiyprog/bino/issues"
+  },
+  "homepage": "https://github.com/dmitriytikhiyprog/bino#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
+  }
+}

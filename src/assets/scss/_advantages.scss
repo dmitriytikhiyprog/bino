@@ -1,0 +1,31 @@
+.advantages {
+    margin-top: 125px;
+    &_list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item {
+        width: 255px;
+        text-align: center;
+    }
+    &_icons {
+        width: 70px;
+        height: 75px;
+        border: 1px solid #E3E3E3;
+        margin: 0 auto;
+        &:hover {
+            border: 1px solid $carrot-color;
+            transform: rotate(45deg);
+            .advantages_icon {
+                
+                
+            }
+        }
+    }
+    &_icon {
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+

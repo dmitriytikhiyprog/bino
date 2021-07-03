@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'promo';
+@import 'advantages';
+
+
+body {
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.wrapper-top-bg {
+    background: url('assets/img/header/foreground.png') center/cover no-repeat, url('assets/img/header/header-bg.png') center/cover no-repeat;
+   
+}
