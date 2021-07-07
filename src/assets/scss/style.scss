@@ -5,6 +5,9 @@
 @import 'promo';
 @import 'advantages';
 @import 'history';
+@import 'services';
+@import 'works';
+@import 'study';
 
 
 body {
@@ -20,5 +23,30 @@ body {
 
 .wrapper-top-bg {
     background: url('assets/img/header/foreground.png') center/cover no-repeat, url('assets/img/header/header-bg.png') center/cover no-repeat;
-   
+}
+
+.section_header {
+    padding-top: 140px;
+    text-align: center;
+    .section_title {
+        font-family: 'SourceSansPro Bold';
+        color: #6a6a6a;
+        font-size: 36px;
+        &-sign {
+            color: #999;
+            font-size: 14px;
+            font-family: 'SourceSansPro'; 
+            margin-top: 30px;
+        }
+    }
+}
+.divider_grey {
+    @include divider;
+    &:before {
+        background-color: $arrow-color;
+    }
+
+    &:after {
+        background-color: $arrow-color;
+    }
 }

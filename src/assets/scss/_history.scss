@@ -1,5 +1,6 @@
 .history {
-    margin-top: 140px;
+    padding-top: 140px;
+    padding-bottom: 145px;
     &_content {
         display: flex;
         justify-content: space-between;
@@ -24,11 +25,7 @@
         color: #6a6a6a;
         font-size: 36px;
         &:before {
-            content: '';
-            width: 5px;
-            height: 35px;
-            background-color: $carrot-color;
-            position: absolute;
+            @include title-serif;
             top: 5px;
             left: 0;
         }

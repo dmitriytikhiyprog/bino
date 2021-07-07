@@ -12,3 +12,43 @@
     color: #f4f5f9;
     font-family: 'OpenSans';
 }
+
+@mixin title-serif {
+    content: '';
+    width: 5px;
+    height: 35px;
+    background-color: $carrot-color;
+    position: absolute;
+}
+
+@mixin service-icon-pos {
+    position: absolute;
+    left: 720px;
+    transform: translateX(-50%);
+}
+
+@mixin divider {
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 8px;
+    height: 8px;
+    background-color: $carrot-color;
+    border-radius: 100%;
+    position: relative;
+    &:before {
+        content: '';
+        width: 80px;
+        position: absolute;
+        height: 1px;
+        left: -95px;
+        top: 4px;
+    }
+    &:after {
+        content: '';
+        width: 80px;
+        position: absolute;
+        height: 1px;
+        right: -95px;
+        top: 4px;
+    }
+}

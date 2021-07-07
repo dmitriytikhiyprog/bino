@@ -1,0 +1,99 @@
+.works_menu {
+    margin-top: 65px;
+    &-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+    }
+    &-item {
+        margin: 0px 20px;
+        font-family: 'OpenSans Bold';
+        color: #999;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s;
+        &:hover {
+            color: $carrot-color;
+        }
+
+        &:after {
+            content: '';
+            height: 12px;
+            width: 2px;
+            background-color: #999;
+            position: absolute;
+            top: 5px;
+            right: -20px;
+            transform: rotate(20deg);
+            cursor: default;
+        }
+
+        &:last-child {
+            &:after {
+                background-color: #fff;
+                transform: rotate(0deg);
+            }
+        }  
+    }
+}
+
+.works_examples {
+    margin-top: 50px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    width: 100%;
+    &-item {
+        width: 1fr;
+        height: 340px;
+        position: relative;
+        .item_wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: $carrot-color;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.5s;
+            &-descr {
+                position: absolute;
+                bottom: 35px;
+                left: 30px;
+                color: #fff;
+                font-family: 'SourceSansPro Semibold';
+            }
+
+            &-title {
+                font-size: 24px;
+                padding: 25px 0 15px 0;
+                &:before {
+                    content: '';
+                    height: 3px;
+                    width: 45px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            &-subtitle {
+                font-family: 'OpenSans';
+                font-size: 14px;
+            }
+        } 
+        &:hover {
+            .item_wrapper {
+                opacity: 0.7;
+            } 
+       }
+
+    }
+
+    &-img {
+        width: 100%;
+        height: 340px;
+    }
+    
+}
