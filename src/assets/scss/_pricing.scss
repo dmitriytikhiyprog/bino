@@ -1,0 +1,112 @@
+.tariffs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    
+    &_item {
+        width: 300px;
+        text-align: center;
+        position: relative;
+
+        &:hover {
+            .tariffs_item-title, 
+            .tariffs_item-btn {
+                background-color: $carrot-color;
+            }
+
+            .tariffs_item-price {
+                color: $carrot-color;
+            }
+        }
+
+        &-tarif {
+            width: 110px;
+            height: 110px;
+            color: #979797;
+            border-radius: 100%;
+            background-color: #FEFEFEFF;
+            position: absolute;
+            top: 170px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            z-index: 10;
+        }
+
+        &--border {
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 100%;
+            top: 170px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        &-structure {
+            position: relative;
+            padding-top: 100px;
+            width: 300px;
+            z-index: 5;
+            background-color: #fff;
+        }
+
+        &-list {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            color: #999;
+            font-family: 'OpenSans Semibold';
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+        &-btn {
+            width: 145px;
+            height: 45px;
+            background-color: #979797FF;
+            border-radius: 2px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        &-link {
+            color: #fff;
+            font-family: "OpenSans Semibold";
+            font-size: 12px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        &-price {
+            font-family: "SourceSansPro Bold";
+            font-size: 29px;
+        }
+
+        &-period {
+            
+            font-family: "SourceSansPro Bold";
+            font-size: 13px;
+        }
+
+        &-title {
+            font-family: "OpenSans Semibold";
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            padding-top: 50px;
+            height: 120px;
+            background-color: #979797;
+        }
+    }
+}
