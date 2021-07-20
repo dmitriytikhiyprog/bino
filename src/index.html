@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>Bino</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,6 +24,11 @@
                         <li class="header_list-item">BLOG</li>
                         <li class="header_list-item">CONTACT</li>
                     </ul>
+                    <div class="hamburger">
+                        <div class="hamburger_divider"></div>
+                        <div class="hamburger_divider"></div>
+                        <div class="hamburger_divider"></div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -427,9 +432,9 @@
     </section>
     <hr class="hr after_tariffs">
     <section class="blog">
-        <div class="section_header color--white">
-            <h2 class="section_title color--white">OUR BLOG</h2>
-            <div class="section_title-sign color--white">Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</div>
+        <div class="section_header">
+            <h2 class="section_title">OUR BLOG</h2>
+            <div class="section_title-sign">Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</div>
         </div>
         <div class="divider_grey"></div>
         <div class="blog_list">
@@ -495,7 +500,7 @@
             <div class="contacts">
                 <div class="contacts_data">
                     <div class="contacts_data-item">
-                        <div class="contacts_data-title">OUR ADDRESS</div>
+                        <div class="contacts_data-title field--margin" id="mto">OUR ADDRESS</div>
                         <div class="contacts_data-descr">House #13, Streat road, Sydney 
                             2310 Australia</div>
                     </div>
@@ -509,13 +514,51 @@
                         <div class="contacts_data-descr">contactus@email.com</div>
                     </div>
                 </div>
-                <div class="contacts_form">
-                    <form>
-                        <input type="text" name="Name" placeholder="Name">
-                    </form>
-                </div>
+                <form class="contacts_form">
+                    <input type="text" name="Name" placeholder="Name" class="contacts_form-field"><br>
+                    <input type="email" name="Email" placeholder="Email" class="contacts_form-field"><br>
+                    <input type="text" name="Subject" placeholder="Subject" class="contacts_form-field"><br>
+                    <textarea placeholder="Message" id="message" cols="30" rows="5" class="contacts_form-field"></textarea>
+                    <button type="submit" class="contacts_form-btn">SEND MESSAGE</button>
+                </form>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="social">
+                    <div class="social_link">
+                       
+                                           
+                    </div>
+                    <div class="social_link">
+                        <img src="assets/icons/social/twitter.svg" alt="twitter" class="social_icon">
+                    </div>
+                    <div class="social_link">
+                        <img src="assets/icons/social/rss.svg" alt="rss" class="social_icon">
+                    </div>
+                    <div class="social_link">
+                        <img src="assets/icons/social/google plus.svg" alt="google plus" class="social_icon">
+                    </div>
+                    <div class="social_link">
+                        <img src="assets/icons/social/linkedin.svg" alt="linkedin" class="social_icon">
+                    </div>
+                    <div class="social_link">
+                        <img src="assets/icons/social/skype.svg" alt="skype" class="social_icon">
+                    </div>
+                    <div class="social_link">
+                        <img src="assets/icons/social/vimeo.svg" alt="vimeo" class="social_icon">
+                    </div>
+                    <div class="social_link">
+                        <img src="assets/icons/social/tumblr.svg" alt="tumblr" class="social_icon">
+                    </div>
+                </div>
+                <div class="rights">
+                    Kazi Erfan &copy All Rights Reserved 
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

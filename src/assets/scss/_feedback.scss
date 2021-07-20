@@ -1,0 +1,73 @@
+.contacts {
+    margin-top: 75px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    &_data {
+        width: 375px;
+        height: 420px; 
+        background-color: #FEFEFEFF;
+        margin-right: 20px;
+        text-align: left;
+        padding: 50px;
+        box-shadow: 0px 7px 10px -10px #979797FF;
+
+        &-title {
+            text-transform: uppercase;
+            color: $carrot-color;
+            font-family: "SourceSansPro Semibold";
+            font-size: 24px;
+            margin-top: 60px;
+            &.field--margin {
+                margin-top: 0px;
+            }
+        }
+
+        
+        &-descr {
+            font-family: "OpenSans";
+            color: #999;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+    
+    &_form {
+        width: 470px;
+        height:420px;
+        background-color: #FEFEFEFF;
+        box-shadow: 0px 7px 10px -10px #979797FF;
+        text-align: left;
+        padding: 50px;
+
+        &-field {
+            
+            border: none;
+            border-bottom: 1px solid #E3E3E3FF;
+            width: 370px;
+            padding: 15px 5px;
+            margin-top: 20px;
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+        &-btn {
+            width: 145px;
+            height:45px;
+            background-color: $carrot-color;
+            color: #fff;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 3px;
+            font-family: "OpenSans Bold";
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 15px;
+            &:hover {
+                box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+            }
+        }
+    }
+}

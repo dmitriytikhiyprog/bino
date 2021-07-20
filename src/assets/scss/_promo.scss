@@ -1,8 +1,10 @@
 .promo {
-    max-width: 675px;
+    max-width: 680px;
     padding: 235px 0 265px 0;
     margin: 0 auto;
     position: relative;
+    text-align: center;
+    
     &_suptitle {
         @include promo-text;
         font-size: 24px;
@@ -19,8 +21,9 @@
         @include promo-text;
         font-size: 14px;
         max-width: 600px;
-        margin-top: 45px;
         line-height: 25px;
+        margin: 0 auto;
+        margin-top: 45px;
     }
     &_btns {
         text-align: center;
@@ -88,19 +91,21 @@
 .arrow-left {
     @include slider-arrows;
     transform: translateX(20%) rotate(45deg);
+ 
 }
 
 .arrow-right {
     @include slider-arrows;
     transform: translateX(-20%) rotate(-135deg);
+    
 }
 
 .left {
-    left: -310px;    
+    left: -430px;    
 }
 
 .right {
-    right: -310px;
+    right: -430px;
 }
 
 .anchor {

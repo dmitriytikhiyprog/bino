@@ -1,9 +1,11 @@
-.blog {   
-    .blog_item {
-        width: 337px;
+.blog {  
+    
+    &_item {
+        width: 100%;
         background-color: $carrot-color;
         color: #fff;
         font-family: "OpenSans";
+        
 
         &-suptitle {
             font-size: 14px;
@@ -33,8 +35,8 @@
         }
 
         &-img {
-            width: 337px;
-            height: 337px;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             position: relative;
 
@@ -46,7 +48,7 @@
     position: relative;
     &:after {
         @include blog-item-arrow;
-        border-left: 20px solid $carrot-color;
+        border-left: 30px solid $carrot-color;
         left: 0;
     }
 }
@@ -55,19 +57,20 @@
     position: relative;
     &:after {
         @include blog-item-arrow;
-        border-right: 20px solid $carrot-color;
+        border-right: 30px solid $carrot-color;
         right: 0;
     }
 }
 
 .item-text {
     box-sizing: border-box;
-    padding: 30px 30px;
+    padding: 30px;
+    
 }
 .blog_list {
     margin-top: 70px;
-    width: 1348px;
+    width: 100%;
     display: grid;
-    grid-template: repeat(2, 337px) / repeat(4, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
 }
 

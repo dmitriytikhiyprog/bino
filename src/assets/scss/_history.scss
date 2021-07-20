@@ -1,6 +1,7 @@
 .history {
     padding-top: 140px;
     padding-bottom: 145px;
+    
     &_content {
         display: flex;
         justify-content: space-between;
@@ -9,6 +10,7 @@
     &_img {
         width: 505px;
         height: 405px;
+        text-align: center;
     }
 
     &_descr {
