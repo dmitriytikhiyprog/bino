@@ -6,14 +6,17 @@
         list-style-type: none;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 0 auto;
     }
     &-item {
         margin: 0px 20px;
+        margin-top: 10px;
         font-family: 'OpenSans Bold';
         color: #999;
         cursor: pointer;
         position: relative;
         transition: all 0.5s;
+       
         &:hover {
             color: $carrot-color;
         }
@@ -44,10 +47,10 @@
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     width: 100%;
-    
     &-item {
         width: 100%;
         position: relative;
+        
         .item_wrapper {
             width: 100%;
             height: 100%;
@@ -58,6 +61,7 @@
             left: 0;
             opacity: 0;
             transition: all 0.5s;
+            
             &-descr {
                 position: absolute;
                 bottom: 35px;

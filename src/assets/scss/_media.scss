@@ -14,10 +14,6 @@
             top: 180px;  
         }
        
-        &_icon-camera {
-           
-            bottom: 50px; 
-        }
     }
     
 }
@@ -52,38 +48,55 @@
     }
 }
 
-@media (max-width: 1280px) {
-    .container {
-        max-width: 1100px;
-    }
-
+@media (max-width: 1366px) {
     .left {
-        left: -270px;    
+        left: -280px;    
     }
     
     .right {
-        right: -270px;
-    }
-    .history {
-        &_img {
-            width: 405px;
-            height: 305px;
-        }
-    
-        &_descr {
-            width: 540px;
-            height: 355px;
-        }
-    }
+        right: -280px;
+    } 
     .services {
         &_item {
-            padding-left: 140px;
+            padding-left: 155px;
         }
-        
     }
+    .blog {  
+    
+        &_item {
+            &-descr {
+                font-size: 12px;
+            }
+        } 
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .left {
+        left: -165px;    
+    }
+    
+    .right {
+        right: -165px;
+    }
+    
+    .services {
+        &_item {
+            margin-right: 25px;
+            padding-left: 25px;
+        }
+        &_title {
+            margin-right: 20px;
+        }
+    }
+
     .blog_item {
         &-descr {
-            font-size: 12px;
+            font-size: 10px;
             line-height: 20px;
         }
         &-title {
@@ -100,9 +113,40 @@
             width: 900px;
         }
     }
+
+    .history {
+        &_img {
+            height: 420px;
+        }
+        &_title {
+            font-size: 32px;
+            &:before {
+                height: 30px;
+            }
+        }
+
+        &_descr {
+            width: 460px;
+            height: 305px;
+        }
+        &_text {
+            margin-top: 15px;
+        }
+        .text--mtop {
+            margin-top: 10px;
+        }
+        &_btn {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
+
+    .container {
+        width: 700px;
+    }
+
     .hamburger_divider {
         display: block;
     }
@@ -111,7 +155,7 @@
     }
 
     .container {
-        max-width: 880px;
+        max-width: 700px;
     }
 
     .arrow-block {
@@ -120,35 +164,37 @@
 
     .advantages {
         &_item {
-            width: 180px;
+            width: 135px;
+        }
+        &_text {
+            font-size: 14px;
+        }
+        &_title {
+            font-size: 16px;
         }
     }
 
     .history {
-        &_img {
-            width: 580px;
-            height: 355px;
-        }
-    
         &_descr {
-            width: 540px;
-            height: 355px;
-            margin-top: 160px;
+            margin: 0 auto;
+            margin-top: 60px;
         }
 
         &_content {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            
         }
     }
     .services {
+        margin-top: 60px;
         &_item {
-            padding-left: 80px;
-            margin-top: 30px;
+            margin: 30px 33px 0px auto;
+            width: 316px;
         }
         &_icon-display {
-            top: 155px;  
+            top: 160px;  
         }
         &_icon-stack {
             bottom: 240px;  
@@ -156,46 +202,155 @@
         &_icon-camera {
             bottom: 110px; 
         }
-    }
-    .blog_item {
-        &-descr {
-            font-size: 10px;
+        &_title {
+            margin-right: 30px;
         }
     }
 
+    .study {
+        &_creative {
+            width: 335px;
+            height: 405px;
+        }
+        &_img {
+            &-bg {
+                width: 485px;
+                height: 585px;
+            }
+        }
+    }
+    .blog {
+        &_item {
+            &-title {
+                font-size: 16px;
+                
+            }
+        }
+        .item-text {
+            padding: 20px 20px 20px 30px;
+        }
+    }
+    .tariffs {
+        &_item {
+            width: 250px;
+        }
+    }
+    .blog_descr-2 {
+        display: none;
+    }
+    .statistics {
+        &_list-item:last-child,
+        &_list-item:nth-child(4) {
+            display: none;
+        }
+        &_list {
+            width: 700px;
+        }
+    }
+    .contacts {
+        &_data {
+            width: 310px;
+        }
+        &_form {
+            width: 325px;
+        }
+    }
+    .works_menu {
+        &-list {
+            width: 90%;
+            
+        }
+    }
 }
+
 @media (max-width: 768px) { 
     .container {
         max-width: 650px;
+        
+    }
+    
+    
+    .works_examples {
+        &-item {
+            .item_wrapper {
+                &-descr {
+                    font-size: 12px;
+                }
+                &-title {
+                    font-size: 16px;
+                    padding: 20px 0 10px 0;
+                }
+                &-descr {
+                    bottom: 20px;
+                    left: 15px;
+                }
+                &-subtitle {
+                    font-size: 12px;
+                }
+                
+            }
+        }
+    }
+     
+    .contacts {
+       
+        &_form {
+            &-field {
+                width: 300px;
+          } 
+        }
+            
+    }
+    .statistics { 
+        &_list {
+            width: 600px;
+        }
     }
 
-    .promo {
-        &_title {
-            font-size: 62px;
-        }
-    }
-    .advantages {
+    .blog {  
         &_item {
-            width: 125px;
-        }
-        &_text {
-            font-size: 12px;
-        }
-        &_title {
-            font-size: 14px;
+            &-title {
+                font-size: 16px;
+            }
         }
     }
+   
     .services {
         &_item {
-            padding-left: 35px;
-            margin-right: 25px;
-        }
-        &_icon-display {
-            top: 160px;  
+            padding-left: 15px;
+            margin-right: 10px;
+            &:first-of-type {
+                margin-top: 50px;
+            }
         }
         &_title {
-            margin-right: 25px;
+            margin-right: 5px;
         }
+        
+        &_icon-display {
+            top: 170px;  
+        }
+        &_icon-stack {
+            bottom: 225px;  
+        }
+        &_icon-camera {
+            bottom: 90px; 
+        }
+        
+    }
+    .study_creative {
+        width: 335px;
+        height: 405px;
+        &-more {
+            margin-top: 30px;
+        }
+    }
+    .study_img {
+        &-bg {
+            width: 485px;
+            height: 585px;
+        }
+
     }
 }
 

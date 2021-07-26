@@ -1,7 +1,6 @@
 .services {
     display: flex;
     position: relative;
-    
     &_content-left {
         width: 50%;
         background-color: #252525;
@@ -47,21 +46,19 @@
             font-size: 18px;
         }
     }
-    &--width {
-        margin-left: 195px;
-    }
+    
 
     &_icon-display {
         @include service-icon-pos;
-        top: 190px;  
+        top: 185px;  
     }
     &_icon-stack {
         @include service-icon-pos;
-        bottom: 205px;  
+        bottom: 210px;  
     }
     &_icon-camera {
         @include service-icon-pos;
-        bottom: 70px; 
+        bottom: 75px; 
     }
   
 }

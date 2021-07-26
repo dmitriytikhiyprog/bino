@@ -1,9 +1,11 @@
 .tariffs {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    flex-wrap: wrap;
     
     &_item {
+        margin: auto;
+        margin-top: 70px;
         width: 300px;
         text-align: center;
         position: relative;
@@ -52,7 +54,7 @@
         &-structure {
             position: relative;
             padding-top: 100px;
-            width: 300px;
+            width: 100%;
             z-index: 5;
             background-color: #fff;
         }
