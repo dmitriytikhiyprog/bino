@@ -3,6 +3,7 @@
     &_list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &_item {
         width: 250px;

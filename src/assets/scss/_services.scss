@@ -4,7 +4,7 @@
     &_content-left {
         width: 50%;
         background-color: #252525;
-        height: 550px;
+        max-height: 550px;
         text-align: right;
         padding-right: 40px;
         padding-top: 50px;
@@ -40,6 +40,7 @@
         margin-right: 33px;
         line-height: 25px;
         padding-left: 235px;
+        position: relative;
         &-title {
             font-family: 'OpenSans Bold';
             color: $carrot-color;
@@ -48,17 +49,11 @@
     }
     
 
-    &_icon-display {
-        @include service-icon-pos;
-        top: 185px;  
-    }
-    &_icon-stack {
-        @include service-icon-pos;
-        bottom: 210px;  
-    }
-    &_icon-camera {
-        @include service-icon-pos;
-        bottom: 75px; 
+   &_icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(150%);
     }
   
 }

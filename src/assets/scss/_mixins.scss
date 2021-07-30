@@ -20,12 +20,6 @@
     position: absolute;
 }
 
-@mixin service-icon-pos {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-25%);
-}
-
 @mixin divider {
     margin: 0 auto;
     margin-top: 45px;
