@@ -1,11 +1,9 @@
-.blog {  
+.blog { 
     &_item {
         width: 100%;
         background-color: $carrot-color;
         color: #fff;
         font-family: "OpenSans";
-        
-
         &-suptitle {
             font-size: 14px;
         }
@@ -41,6 +39,12 @@
 
         }
     }
+    &_list {
+        margin-top: 70px;
+        width: 100%;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    }
 }
 
 .item_arrow-left {
@@ -65,11 +69,5 @@
     box-sizing: border-box;
     padding: 30px;
     
-}
-.blog_list {
-    margin-top: 70px;
-    width: 100%;
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
 }
 

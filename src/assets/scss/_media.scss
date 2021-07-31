@@ -73,7 +73,6 @@
             margin-right: 20px;
         }
         &_icon {
-            /*top: 170px;*/
             transform: translateX(140%);  
         }
     }
@@ -92,11 +91,7 @@
             font-size: 10px;
         }
     }
-    .statistics  {
-        &_list {
-            width: 900px;
-        }
-    }
+   
 
     .history {
         &_img {
@@ -175,7 +170,6 @@
             
         }
         &_icon {
-            /*top: 160px;*/
             transform: translateX(150%);  
              
         }
@@ -226,9 +220,6 @@
         &_list-item:nth-child(4) {
             display: none;
         }
-        &_list {
-            width: 700px;
-        }
     }
     .contacts {
         &_data {
@@ -236,12 +227,6 @@
         }
         &_form {
             width: 325px;
-        }
-    }
-    .works_menu {
-        &-list {
-            width: 90%;
-            
         }
     }
 }
@@ -254,24 +239,23 @@
     
     
     .works_examples {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         &-item {
             .item_wrapper {
                 &-descr {
-                    font-size: 12px;
+                    left: 30px;
+                    bottom: 35px;
                 }
                 &-title {
-                    font-size: 16px;
-                    padding: 20px 0 10px 0;
-                }
-                &-descr {
-                    bottom: 20px;
-                    left: 15px;
+                    font-size: 28px;
+                    &:before {
+                        width: 75px;
+                    }
                 }
                 &-subtitle {
-                    font-size: 12px;
+                    font-size: 18px;
                 }
-                
-            }
+            }  
         }
     }
      
@@ -281,16 +265,10 @@
             &-field {
                 width: 300px;
           } 
-        }
-            
-    }
-    .statistics { 
-        &_list {
-            width: 600px;
-        }
+        }      
     }
 
-    .blog {  
+    .blog { 
         &_item {
             &-title {
                 font-size: 16px;
@@ -311,7 +289,6 @@
         }
         
        &_icon {
-            /*top: 170px;*/
             transform: translateX(120%);  
         }
         &_icon-stack {
@@ -395,7 +372,83 @@
             flex-wrap: wrap;
         }
     }
-       
+    .study_creative {
+        width: 300px;
+        height: 330px;
+        padding: 50px 30px 0px 30px;
+        top: 35px;
+        &-more {
+            margin-top: 15px;
+            width: 125px;
+            height: 40px;
+        }
+        &-title {
+            margin-top: 35px;
+            &:after { 
+                top: 40px;
+            }
+        }
+        &-descr {
+            margin-top: 40px;
+        }
+    }
+    
+    .study_img {
+        &-bg {
+            width: 345px;
+            height: 455px;
+        }
+
+    }
+    .blog {
+        &_list {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+        &_item:nth-child(1) {
+            order: 1;
+        }
+        &_item:nth-child(2) {
+            order: 2;
+        }
+        &_item:nth-child(3) {
+            order: 5;
+        }
+        &_item:nth-child(4) {
+            order: 6;
+        }
+        &_item:nth-child(5) {
+            order: 3;
+        }
+        &_item:nth-child(6) {
+            order: 4;
+        }
+        &_item:nth-child(7) {
+            order: 7;
+        }
+        &_item:nth-child(8) {
+            order: 8;
+        }
+        .blog_descr-2 {
+            display: block;
+        }
+        .item-text {
+            padding-top: 30px;
+        }
+    } 
+    .contacts {
+        &_form {
+            width: 50%;
+            &-field {
+                width: 100%;
+            }
+        }
+        &_data {
+            width: 50%;
+            margin-right: 0px;
+            padding-right: 0px;
+        }
+    }
+    
 }
 
 @media (max-width: 600px) {
@@ -413,8 +466,26 @@
             }
         }
     }
+    .blog {
+        .blog_descr-2 {
+            display: none;
+        }
+    }
+    .works_examples {
+        &-item {
+            .item_wrapper {
+                &-descr {
+                    left: 50px;
+                    bottom: 55px;
+                }
+                &-title {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+      
 }
-
 @media (max-width: 480px) { 
     .container {
         max-width: 430px;

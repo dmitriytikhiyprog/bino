@@ -4,7 +4,6 @@
     margin-top: 145px;
     text-align: center;
     padding: 160px 0;
-
     &:after {
         content: '';
         position: absolute;
@@ -23,10 +22,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 15;
-        width: 1170px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     &_icon-wrapper {
