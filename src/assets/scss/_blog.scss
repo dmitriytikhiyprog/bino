@@ -56,7 +56,7 @@
     }
 }
 
-.item_arrow-right{
+.item_arrow-right {
     position: relative;
     &:after {
         @include blog-item-arrow;

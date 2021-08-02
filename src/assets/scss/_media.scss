@@ -2,11 +2,11 @@
 @media (max-width: 1600px) {
     
     .left {
-        left: -380px;    
+        left: -370px;    
     }
     
     .right {
-        right: -380px;
+        right: -370px;
     }  
 }
 
@@ -118,6 +118,20 @@
             margin-top: 20px;
         }
     }
+    .contacts {
+        &_data {
+            width: 310px;
+        }
+        &_form {
+            width: 325px;
+        } 
+    }
+    .study {
+        &_creative {
+            width: 470px;
+            margin-left: 60px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -166,7 +180,7 @@
     .services {
         margin-top: 60px;
         &_item {
-            margin: 30px 33px 0px auto;
+            margin: 50px 33px 0px auto;
             
         }
         &_icon {
@@ -188,6 +202,7 @@
         &_creative {
             width: 335px;
             height: 405px;
+            margin-left: 0px;
         }
         &_img {
             &-bg {
@@ -221,13 +236,26 @@
             display: none;
         }
     }
+    .works_examples {
+        &-item {
+            .item_wrapper {
+                &-descr {
+                    left: 20px;
+                    bottom: 25px;
+                }
+            }
+        }
+    }
     .contacts {
         &_data {
-            width: 310px;
+            width: 210px;
         }
         &_form {
-            width: 325px;
-        }
+            width: 215px;
+            &-field {
+                width: 100%;
+            }
+        } 
     }
 }
 
@@ -253,7 +281,7 @@
                     }
                 }
                 &-subtitle {
-                    font-size: 18px;
+                    font-size: 22px;
                 }
             }  
         }
@@ -261,11 +289,13 @@
      
     .contacts {
        
+        &-data {
+            width: 50%;
+            padding-right: 50px;
+        }
         &_form {
-            &-field {
-                width: 300px;
-          } 
-        }      
+            width: 50%;
+        }     
     }
 
     .blog { 
@@ -280,6 +310,7 @@
         &_item {
             padding-left: 15px;
             margin-right: 10px;
+            margin-top: 30px;
             &:first-of-type {
                 margin-top: 50px;
             }
@@ -488,36 +519,50 @@
 }
 @media (max-width: 480px) { 
     .container {
-        max-width: 430px;
+        max-width: 300px;
     }
-
+    .header {
+        &_logo {
+            display: none;
+        }
+    }
+    .promo {
+        padding-bottom: 200px;
+    }
     .advantages {
         &_item {
             width: 180px;
             margin-top: 10px;
         }
         &_list {
-            flex-wrap: wrap;
+            justify-content: center;
         }
     }
-
-    
+    .statistics {
+        min-height: 450px;
+        &_list {
+            &-item {
+                margin-top: 50px;
+                width: 100%;
+            }
+        }
+    }
     .history {
         margin-bottom: 340px;
         &_img {
-            width: 370px;
-            height: 185px;
+            width: 300px;
+            height: 235px;
 
         }
-        &_monitor {
-            width: 350px;
-            height: 255px;
-        }
-    
         &_descr {
-            width: 370px;
-            height: 185px;
-            margin-top: 160px;
+            width: 300px;
+            margin-top: 90px;
+        }
+        &_text {
+            font-size: 16px;
+        }
+        &_btn {
+            margin-top: 40px;
         }
 
         &_content {
@@ -527,12 +572,13 @@
         }
     }
     .services {
-        &_title{
-            font-size: 24px;
-            margin-right: 15px;
+        &_title {
+            margin-right: 10px;
+            font-size: 32px;
             padding-right: 15px;
             &:after { 
-                top: 0px;
+                top: 5px;
+                height: 30px;
             }
         }
         &_item {
@@ -540,6 +586,122 @@
             line-height: 22px;
             margin-right: 10px;
         }
+        &_icon {
+            display: none;
+        }
+        &_content-right {
+            display: none;
+        }
+        &_content-left {
+           width: 100%;
+           padding-bottom: 60px; 
+        }
+    }
+    .works_examples {
+        &-item {
+            .item_wrapper {
+                &-descr {
+                    left: 30px;
+                    bottom: 30px;
+                }
+                &-title {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .study {
+        margin-bottom: 570px;
+        &_creative {
+            width: 250px;
+            height: 370px;
+            padding: 50px 20px 0px;
+            top: 20px;
+            &-title {
+                font-size: 16px;
+            }
+        }
+        &_img {
+            display: none;
+        }
+    }
+    .blog {
+        &_list {
+            grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-rows: repeat(8, 1fr) ;
+        }
+        &_item {
+            &:nth-child(3) {
+                order: 3;
+            }
+            &:nth-child(4) {
+                order: 4;
+            }
+            &:nth-child(5) {
+                order: 6;
+            }
+            &:nth-child(6) {
+                order: 5;
+            }
+            &:nth-child(7) {
+                order: 8;
+            }
+            &:nth-child(8) {
+                order: 7;
+            }
+            &-descr {
+               font-size: 14px;
+               line-height: 28px; 
+            }
+            &-title {
+                font-size: 24px;
+            }
+            &-suptitle {
+                font-size: 14px;
+            }
+        }
+        .item_arrow-right {
+            &:after { 
+                @include blog-item-arrow-bottom;
+                transform: translate(-50%, -35%) rotate(-45deg);
+            }
+        }
+        .item_arrow-left {
+            &:after {
+                @include blog-item-arrow-bottom;
+                transform: translate(-50%, -35%) rotate(45deg);
+            }
+        }
+        .blog_descr-2 {
+            display: block;
+        }
+        .item-text {
+            padding-top: 30px;
+           
+        }
+    }
+    .contacts {
+        &_data {
+            width: 305px;
+            
+        }
+        &_form {
+            width: 255px;
+            &-field {
+                width: 205px;
+          } 
+        }
+    }
+    .footer {
+        &_content {
+            .social {
+                margin: 0 auto;
+            }
+        }
+        .rights {
+            margin: 0 auto;
+            margin-top: 20px;
+        } 
     }
 }
 
@@ -572,7 +734,7 @@
     }
 
     .history {
-        
+        padding-bottom: 185px;
         &_img {
             width: 250px;
             height: 175px;

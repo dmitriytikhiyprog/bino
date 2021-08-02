@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-   
+    flex-wrap: wrap;
     &_data {
         width: 375px;
         height: 420px; 

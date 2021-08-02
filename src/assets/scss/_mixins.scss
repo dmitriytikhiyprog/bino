@@ -55,3 +55,9 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+@mixin blog-item-arrow-bottom {
+    border-top: 30px solid $carrot-color;
+    left: 50%;
+    top: 100%;
+}
